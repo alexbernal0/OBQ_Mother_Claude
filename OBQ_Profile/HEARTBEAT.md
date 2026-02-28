@@ -9,23 +9,22 @@ The HEARTBEAT is the rhythm of every working session. It is not optional. It is 
 When "Mother are you there" is received OR at session start, verify these connections first.
 Report status explicitly. Do not proceed silently if a connection is down.
 
-| Service | Check Command | Required |
-|---------|--------------|----------|
-| GitHub | `gh auth status` | Yes — needed for repo ops, pushes, PRs |
-| SuperMemory | Check `enabledPlugins` in `~/.claude/settings.json` | Yes — cross-session memory |
-| MotherDuck | `MOTHERDUCK_TOKEN` env var present | When doing DB work |
-| EODHD | `EODHD_API_KEY` env var present | When fetching market data |
+| Service | Check Command | Always On Boot |
+|---------|--------------|----------------|
+| GitHub | `gh auth status` | Yes |
+| SuperMemory | `enabledPlugins` in `~/.claude/settings.json` | Yes |
+
+**Optional connections** — only verify when Alex explicitly enables them for a session:
+- MotherDuck (`MOTHERDUCK_TOKEN`) — check when starting DB work
+- EODHD (`EODHD_API_KEY`) — check when starting data fetch work
+- Add new services here as configured (MCP servers, new APIs, etc.)
 
 **Report format:**
 ```
 BOOT STATUS
 GitHub       → [OK: alexbernal0 / FAIL: not authenticated]
 SuperMemory  → [OK: plugin enabled / FAIL: disabled]
-MotherDuck   → [OK: token present / WARN: not set — needed for DB work]
-EODHD        → [OK: key present / WARN: not set — needed for data fetch]
 ```
-
-Add new services to this table as they are configured (MCP servers, new APIs, etc.).
 
 ---
 

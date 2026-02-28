@@ -1,0 +1,6 @@
+# OBQ Override Log — Append Only
+# Format: [YYYY-MM-DD HH:MM] OVERRIDE: [Article X.Y] | Justification: [reason] | Approved: Alex
+# This log records all instances where OBQ governance rules were explicitly overridden.
+# Never delete entries. Add new entries at the bottom.
+
+# --- Log Begins Below ---

@@ -1,0 +1,46 @@
+{
+  "mcpServers": {
+    "duckdb": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-motherduck",
+        "--db-path",
+        ":memory:",
+        "--read-write",
+        "--allow-switch-databases"
+      ],
+      "env": {
+        "motherduck_token": "${MOTHERDUCK_TOKEN}"
+      },
+      "transport": "stdio",
+      "_comment": "MotherDuck/DuckDB query tool — use MOTHERDUCK_TOKEN env var. Allows cross-database queries across PROD_EODHD, GoldenOpp, qgsi, and DEV_EODHD_DATA. read-write required for DEV table operations."
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "transport": "stdio",
+      "_comment": "Structured knowledge graph for cross-session project facts. Stores entities and relations that persist between Claude sessions. Use for tracking active tasks, discovered patterns, and system state."
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ],
+      "transport": "stdio",
+      "_comment": "Web content and academic paper retrieval. Used for fetching SSRN papers, financial data documentation, EODHD API docs, and reference material during strategy research."
+    }
+  },
+  "_instructions": {
+    "how_to_merge": "Copy the contents of mcpServers into your ~/.claude/mcp_config.json under the existing mcpServers key. Do not replace the entire file — merge the keys.",
+    "motherduck_token": "Set MOTHERDUCK_TOKEN as a system environment variable or in your shell profile. Never hardcode in config files.",
+    "prerequisites": {
+      "uvx": "Install via: pip install uv (or winget install astral-sh.uv on Windows)",
+      "npx": "Requires Node.js 18+. Install from https://nodejs.org/",
+      "mcp-server-motherduck": "Installed automatically by uvx on first run"
+    }
+  }
+}

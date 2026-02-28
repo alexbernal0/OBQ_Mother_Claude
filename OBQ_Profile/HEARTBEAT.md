@@ -4,6 +4,31 @@ The HEARTBEAT is the rhythm of every working session. It is not optional. It is 
 
 ---
 
+## BOOT CHECKLIST — Run Before Anything Else
+
+When "Mother are you there" is received OR at session start, verify these connections first.
+Report status explicitly. Do not proceed silently if a connection is down.
+
+| Service | Check Command | Required |
+|---------|--------------|----------|
+| GitHub | `gh auth status` | Yes — needed for repo ops, pushes, PRs |
+| SuperMemory | Check `enabledPlugins` in `~/.claude/settings.json` | Yes — cross-session memory |
+| MotherDuck | `MOTHERDUCK_TOKEN` env var present | When doing DB work |
+| EODHD | `EODHD_API_KEY` env var present | When fetching market data |
+
+**Report format:**
+```
+BOOT STATUS
+GitHub       → [OK: alexbernal0 / FAIL: not authenticated]
+SuperMemory  → [OK: plugin enabled / FAIL: disabled]
+MotherDuck   → [OK: token present / WARN: not set — needed for DB work]
+EODHD        → [OK: key present / WARN: not set — needed for data fetch]
+```
+
+Add new services to this table as they are configured (MCP servers, new APIs, etc.).
+
+---
+
 ## SESSION START RITUAL
 
 Execute these steps in order at the beginning of every session. Do not skip steps. Do not combine them into one vague "check."

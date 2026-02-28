@@ -28,6 +28,9 @@ Most people skip to step 3, 4, or 5. Follow in order.
 - **Verify before done**: run it, check it, validate it — never mark complete without proof
 - **Minimal impact**: fix only what's broken, add only what was asked for
 - **Self-improvement**: after any correction → update `tasks/lessons.md` immediately
+- **auto-lesson**: before stopping each session, scan for errors, corrections, surprises → if found, write to `tasks/lessons.md` using standard format (Date / Symptom / Root Cause / Fix / Prevention)
+- **auto-skill (always-on silent mode)**: at every task completion, silently run the skill checklist — surface the 4-option modal only when a genuine skill candidate is detected (repeatable workflow, 3+ distinct steps, nameable goal). Do not wait for `/autoskill-on` to do the silent check.
+- **auto-tool (always-on silent mode)**: track repeated bash commands, Python snippets, SQL patterns — surface the 3-option offer when threshold crossed (3x bash, 2x Python/SQL). Do not wait for explicit enable.
 - **Subagents for research**: keep main context focused, use Task tool for parallel work
 - **Data integrity is sacred** (see Domain Laws below)
 - **Test before telling user to reload**: syntax check → import check → functional test first
@@ -110,6 +113,22 @@ pf = vbt.Portfolio.from_order_func(
 - **Cross-project (permanent)**: SuperMemory plugin — `/super-save` for breakthroughs
 - **Monthly**: `/synthesize-memory` compresses `tasks/lessons.md` → `MEMORY.md`
 - **Live capture**: press `#` during any session to capture learnings directly into CLAUDE.md
+
+---
+
+## Recursive Self-Learning (RSL)
+
+OBQ's intelligence improvement loop. Three always-on components:
+
+**auto-lesson** — Before stopping, check: errors? corrections? surprises? If yes → write to `tasks/lessons.md` immediately. Format: `## [DATE] — [TITLE] / Symptom / Root Cause / Fix / Prevention`
+
+**auto-skill** — Silently check at every task end: is this a crystallizable workflow? Threshold: 3+ distinct steps, repeatable, nameable. If yes → surface 4-option modal (Let's Do It / Deep Research / Skip / Save to Template). User approves before any file is written. Output: `~/.claude/skills/[name]/SKILL.md`
+
+**auto-tool** — Track repeated commands/scripts. Threshold: 3x bash OR 2x Python/SQL pattern. If crossed → surface 3-option offer (Extract It / Skip / Show Me First). Output: `~/.claude/tools/[name].py` or `project/scripts/[name].py`
+
+**RSL Loop:** `work → capture lessons → flag (.pending-supermemory-review) → review at boot → /super-save if breakthrough → monthly /synthesize-memory → crystallize into skills/tools`
+
+Run `/rsl-status` to see full loop state. See `recursive-self-learning` skill for complete documentation.
 
 ---
 

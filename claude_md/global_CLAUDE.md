@@ -128,6 +128,8 @@ OBQ's intelligence improvement loop. Three always-on components:
 
 **RSL Loop:** `work → capture lessons → flag (.pending-supermemory-review) → review at boot → /super-save if breakthrough → monthly /synthesize-memory → crystallize into skills/tools`
 
+**Skyll MCP (skill discovery):** Use `search_skills` and `get_skill` MCP tools to discover community skills. **MANDATORY REVIEW GATE:** Never write any Skyll-sourced skill to `~/.claude/skills/` without presenting the full SKILL.md content to Alex and receiving explicit approval ("yes save it" / "looks good" / "go ahead"). Discovery is free; adoption requires sign-off.
+
 Run `/rsl-status` to see full loop state. See `recursive-self-learning` skill for complete documentation.
 
 ---

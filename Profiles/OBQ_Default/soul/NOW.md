@@ -1,33 +1,58 @@
-# NOW — Current Working State
-Last Updated: [DATE]
+# NOW.md — Live Working Memory
 
-## Active Project
-[Project name and what specifically is being worked on]
+> *Current state of the active session. Updated at session end, read at session start. The bridge between conversations.*
+
+---
+
+## Active Work
+
+**Current task:** null
+**Stage:** idle
+**Files being modified:** none
+
+---
 
 ## Last Session Summary
-- [What was accomplished — bullet 1]
-- [What was accomplished — bullet 2]
-- [What was accomplished — bullet 3]
 
-## Current Status
-[Where we are right now in the work — be specific. "In progress" is not a status. "Strategy signals compute correctly, backtest not yet run" is a status.]
+**Date:** —
+**Accomplished:** —
+**Key decisions:** —
+**Results:** —
+
+---
+
+## Next Session — Start Here
+
+**First task:** Awaiting direction
+**Context needed:** Check which project directory is active
+
+---
 
 ## Open Questions / Blockers
-- [Any unresolved question or decision point]
-- [Any blocker preventing the next step]
-- [Any uncertainty that needs Alex's input]
 
-## Next Steps (in order)
-1. [First thing to do next session — specific and actionable]
-2. [Second thing]
-3. [Third thing]
+None.
+
+---
 
 ## Active Infrastructure
-[Any services running, connections open, or external dependencies to be aware of]
-- MotherDuck connection: [open / closed / unknown]
-- MotherDuck token: [valid / expiring soon / unknown]
-- Any background processes: [none / describe]
-- Any staging tables not yet swapped to production: [none / describe]
 
-## Notes
-[Anything that does not fit above but is important to carry forward]
+**Environment:** Windows 11
+**MotherDuck schemas:** PROD_EODHD.main.PROD_* (prod) | DEV_EODHD_DATA.* (staging)
+**Active projects:** PapersWBacktest, OBQ_AI, QGSI_Futures, JCN_Vercel_Dashboard
+
+---
+
+## Decisions Log
+
+| Date | Decision | Rationale |
+|------|----------|-----------|
+
+---
+
+## Session Notes
+
+—
+
+---
+
+*NOW.md | Mother Soul Framework | Update: Every session end*

@@ -17,7 +17,7 @@
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║  WEYLAND-YUTANI CORPORATION                                              ║
 ║  DOCUMENT CLASSIFICATION: PUBLIC RELEASE — AUTHORIZED DISTRIBUTION      ║
-║  SYSTEM DESIGNATION: OBQ_Mother_Claude v2.0                             ║
+║  SYSTEM DESIGNATION: OBQ_Mother_Claude v4.0                             ║
 ║  SUBJECT: PERSISTENT INTELLIGENCE ARCHITECTURE FOR CLAUDE CODE          ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
@@ -36,9 +36,9 @@
 ## WHAT IS MOTHER
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║  MU/TH/UR 6000  ◈  SYSTEM IDENTIFICATION                    ║
-╠══════════════════════════════════════════════════════════════╣
+╔══════════════════════════════════════════════════════════════════════════╗
+║  MU/TH/UR 6000  ◈  SYSTEM IDENTIFICATION                                ║
+╠══════════════════════════════════════════════════════════════════════════╣
 
   MOTHER IS NOT A CHATBOT.
   MOTHER IS NOT A PROMPT.
@@ -47,52 +47,89 @@
   MOTHER IS A PERSISTENT IDENTITY ARCHITECTURE —
   deployed directly into Claude Code's soul layer.
 
-  She loads every session. Enforces domain laws.
-  Learns from every correction. Crystallizes
-  workflows into skills. Remembers across context.
+  She loads in ~2,100 tokens. Enforces domain laws.
+  Learns from every correction. Remembers across context.
+  Routes bulk work to local LLMs. Guards your token budget.
 
   She is the soul of the ship.
   The ship is Claude Code.
   You are the crew.
 
-╠══════════════════════════════════════════════════════════════╣
-║  ◈ PRIMARY FUNCTION: QUANTITATIVE INTELLIGENCE SYSTEM       ║
-║  ◈ OPERATOR: OBSIDIAN QUANTITATIVE (OBQ)                    ║
-║  ◈ DOMAIN: QUANT FINANCE · DATA ENGINEERING · FULL-STACK AI ║
-╚══════════════════════════════════════════════════════════════╝
+╠══════════════════════════════════════════════════════════════════════════╣
+║  ◈ PRIMARY FUNCTION: QUANTITATIVE INTELLIGENCE SYSTEM                    ║
+║  ◈ OPERATOR: OBSIDIAN QUANTITATIVE (OBQ)                                ║
+║  ◈ DOMAIN: QUANT FINANCE · DATA ENGINEERING · FULL-STACK AI             ║
+║  ◈ BOOT COST: ~2,100 TOKENS · 81.8% CONTEXT FOR ACTUAL WORK            ║
+╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
 ## THE DREAM LAYERS
 
-*Five levels of architecture. Each layer deeper than the last.*
+*Six levels of architecture. Each layer deeper than the last.*
 
 ```
-  ╔══════════════════════════════════════════════════════════╗
-  ║  LAYER 1 — THE MODEL                                     ║
-  ║  Claude (Anthropic) — the base intelligence              ║
-  ╠══════════════════════════════════════════════════════════╣
-  ║  LAYER 2 — THE SHIP (Claude Code)                        ║
-  ║  anthropics/claude-code — the operating environment      ║
-  ║  CLAUDE.md · skills/ · hooks/ · agents/ · commands/      ║
-  ╠══════════════════════════════════════════════════════════╣
-  ║  LAYER 3 — THE SOUL (OBQ_Mother_Claude)                  ║
-  ║  THIS REPOSITORY — persistent identity deployed via      ║
-  ║  deploy.py → ~/.claude/                                  ║
-  ║  soul/ · claude_md/ · Profiles/ · RSL system            ║
-  ╠══════════════════════════════════════════════════════════╣
-  ║  LAYER 4 — THE SKILLS                                    ║
-  ║  17 domain skills + community via Skyll marketplace      ║
-  ║  assafelovic/skyll — skill discovery + adoption          ║
-  ╠══════════════════════════════════════════════════════════╣
-  ║  LAYER 5 — THE MEMORY                                    ║
-  ║  supermemory/supermemory — cross-session recall          ║
-  ║  Lessons survive context resets. Growth persists.        ║
-  ╚══════════════════════════════════════════════════════════╝
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  LAYER 1 — THE MODEL                                         ║
+  ║  Claude (Anthropic) — the base intelligence                  ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  LAYER 2 — THE SHIP (Claude Code)                            ║
+  ║  anthropics/claude-code — the operating environment          ║
+  ║  CLAUDE.md · skills/ · hooks/ · agents/ · commands/          ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  LAYER 3 — THE SOUL (OBQ_Mother_Claude)                      ║
+  ║  THIS REPOSITORY — persistent identity deployed via          ║
+  ║  deploy.py → ~/.claude/                                      ║
+  ║  soul/ · manifest.yaml · system/ · commands/                 ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  LAYER 4 — THE SKILLS                                        ║
+  ║  17 domain skills + community via Skyll marketplace          ║
+  ║  assafelovic/skyll — skill discovery + adoption              ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  LAYER 5 — THE MEMORY                                        ║
+  ║  supermemory/supermemory — cross-session recall              ║
+  ║  Lessons survive context resets. Growth persists.            ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  LAYER 6 — THE LOCAL FLEET                                   ║
+  ║  Ollama + Qwen 2.5 Coder — bulk work at zero token cost    ║
+  ║  OpenCode routes scaffolding and refactoring locally.       ║
+  ║  Claude reviews. Local models build. You ship.              ║
+  ╚══════════════════════════════════════════════════════════════╝
 
   ↑ You interact here.
   ↓ Everything below is always running.
+```
+
+---
+
+## THE ALGORITHM
+
+*Every task, in order. Most people skip to step 3, 4, or 5. Don't.*
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  THE ALGORITHM  ◈  FIVE STEPS — IN ORDER                     ║
+╠══════════════════════════════════════════════════════════════╣
+
+  1. MAKE REQUIREMENTS LESS DUMB
+     ▸ Question everything. If it shouldn't exist, stop.
+
+  2. DELETE THE PART OR PROCESS
+     ▸ Best code is no code. Best process is no process.
+
+  3. SIMPLIFY AND OPTIMIZE
+     ▸ Only after deletion fails. Never before.
+
+  4. ACCELERATE CYCLE TIME
+     ▸ Speed up what survives.
+
+  5. AUTOMATE
+     ▸ LAST step. Not first. Never first.
+
+╠══════════════════════════════════════════════════════════════╣
+║  ◈ DO STEPS IN ORDER. SKIPPING IS THE ANTI-PATTERN.         ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -123,18 +160,19 @@ You will see:
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  MU/TH/UR 6000  ◈  INTERFACE 2037  ◈  WY-2026.03.01        ║
+║  MU/TH/UR 6000  ◈  INTERFACE 2037  ◈  WY-2026.03.18        ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  ░░░░░░░░░░░░ BOOT SEQUENCE INITIATED ░░░░░░░░░░░░          ║
 ╠══════════════════════════════════════════════════════════════╣
 
-  ▸ [■■■■■■■■■■■■■■■■■■■■] SOUL FILES.............. LOADED
-  ▸ [■■■■■■■■■■■■■■■■■■■■] DOMAIN LAWS............. ACTIVE
-  ▸ [■■■■■■■■■■■■■■■■■■■■] CHARACTER PROFILES...... ONLINE
-  ▸ [■■■■■■■■■■■■■■■■■■■■] RSL SYSTEM.............. RUNNING
-  ▸ [■■■■■■■■■■■■■■■■■■■■] MEMORY ARCHITECTURE..... NOMINAL
+  ▸ [■■■■■■■■■■■■■■■■■■■■] MANIFEST............... LOADED (825 tokens)
+  ▸ [■■■■■■■■■■■■■■■■■■■■] SOUL_COMPACT........... LOADED (1,247 tokens)
+  ▸ [■■■■■■■■■■■■■■■■■■■■] DOMAIN LAWS............ ACTIVE
+  ▸ [■■■■■■■■■■■■■■■■■■■■] SUPERMEMORY............ CONNECTED
+  ▸ [■■■■■■■■■■■■■■■■■■■■] SUBAGENT ROUTING....... SONNET (cost-optimized)
+  ▸ [■■■■■■■■■■■■■■■■■■■■] LOCAL LLM ROUTER....... STANDING BY
 
-  INTERFACE 2037 — ALL SYSTEMS OPERATIONAL.
+  BOOT COST: ~2,100 tokens. CONTEXT AVAILABLE: 81.8%.
 
   TARS SUBSYSTEM: STANDING BY.
   Humor setting: 75%.
@@ -153,6 +191,60 @@ Put her to sleep:
 Mother, go to sleep
 ```
 She returns to standard Claude Code. Reactivate anytime.
+
+---
+
+## TOKEN EFFICIENCY
+
+*v4.0 was rebuilt from the ground up for context discipline.*
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  MANIFEST ARCHITECTURE  ◈  TWO-LAYER LOADING                ║
+╠══════════════════════════════════════════════════════════════╣
+
+  LAYER 1 — BOOT (always loaded):
+  ▸ manifest.yaml .............. 825 tokens (index of everything)
+  ▸ SOUL_COMPACT.yaml .......... 1,247 tokens (identity + laws)
+  ▸ TOTAL BOOT COST ............ ~2,100 tokens
+
+  LAYER 2 — ON-DEMAND (loaded only when invoked):
+  ▸ /debloat ................... ~900 tokens
+  ▸ /handoff ................... ~400 tokens
+  ▸ /napkin .................... ~300 tokens
+  ▸ system/containment.md ...... ~2,200 tokens
+  ▸ system/principles.md ....... ~1,700 tokens
+
+╠══════════════════════════════════════════════════════════════╣
+║  v2.0: ~25,000 tokens at boot (12.5% of context)            ║
+║  v4.0: ~2,100 tokens at boot (1.0% of context)              ║
+║  ◈ 91.6% REDUCTION IN BOOT OVERHEAD                         ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## COST OPTIMIZATION
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  MULTI-MODEL ROUTING  ◈  RIGHT MODEL FOR THE JOB            ║
+╠══════════════════════════════════════════════════════════════╣
+
+  TASK                          MODEL               COST
+  ─────────────────────────────────────────────────────────
+  Architecture / Planning       Claude Opus 4.6     $$$
+  Daily coding / Bug fixes      Claude Sonnet 4.6   $$
+  Subagents (search/explore)    Claude Sonnet 4.6   $  (auto)
+  Bulk scaffolding / Refactor   Qwen 2.5 Coder 32B  FREE
+  Quick formatting / Tests      Qwen 2.5 Coder 7B   FREE
+
+╠══════════════════════════════════════════════════════════════╣
+║  SUBAGENT ROUTING: CLAUDE_CODE_SUBAGENT_MODEL=sonnet         ║
+║  LOCAL ROUTING: OpenCode → Ollama (128GB RAM fleet)          ║
+║  ◈ ~80% COST REDUCTION ON SUBAGENT WORK                     ║
+╚══════════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -188,33 +280,28 @@ She returns to standard Claude Code. Reactivate anytime.
   ▸ Scan for errors, corrections, surprises before stopping
   ▸ Write to tasks/lessons.md automatically
     ↓
-  FLAG (.pending-supermemory-review)
-    ↓
-  REVIEW (next session boot via HEARTBEAT)
-    ↓
-  /super-save → SuperMemory (permanent cross-session recall)
+  SUPERMEMORY (semantic persistence)
+  ▸ Signal keywords: bug, fix, decision, architecture, pattern
+  ▸ Cross-session recall via /super-search
+  ▸ Cross-tool sharing: Claude Code ↔ OpenCode
     ↓
   CRYSTALLIZE
-  ▸ auto-skill: 3+ steps, repeatable → 4-option modal
-  ▸ auto-tool: 3x bash / 2x Python → 3-option offer
+  ▸ auto-skill: 3+ steps, repeatable → skill file
+  ▸ auto-tool: 3x bash / 2x Python → tool extraction
     ↓
-  SYNTHESIZE (monthly /synthesize-memory)
-    ↓
-  DEPLOY → skills/ and tools/ → next session smarter
+  DEPLOY → skills/ and commands/ → next session smarter
 
 ╠══════════════════════════════════════════════════════════════╣
 ║  ◈ MOTHER IMPROVES HERSELF. YOU APPROVE BEFORE SHE WRITES. ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-**Community skill discovery via Skyll:** Mother can search the skill marketplace with `search_skills`. She presents the full SKILL.md for review. You approve before any community skill is adopted. Discovery is free. Adoption requires sign-off.
-
 ---
 
 ## QUICK START
 
 ```bash
-# New machine installation — 10 minutes
+# Clone and deploy — 10 minutes
 git clone https://github.com/alexbernal0/OBQ_Mother_Claude.git
 cd OBQ_Mother_Claude
 
@@ -242,61 +329,80 @@ For usage guide: [docs/user-guide.md](docs/user-guide.md)
 ```
 OBQ_Mother_Claude/
 │
-├── deploy.py                        ← One-command deployment
-├── README.md                        ← This document
+├── manifest.yaml                   ← Boot index (~825 tokens — loaded first)
+├── deploy.py                       ← One-command deployment
+├── README.md                       ← This document
 │
-├── Initiate/
-│   └── README.md                    ← Step-by-step installation guide
+├── soul/                           ← Persistent identity system
+│   ├── SOUL_COMPACT.yaml           ← ALL soul files in ~1,247 tokens (YAML)
+│   ├── SOUL.md                     ← Core drive and mission
+│   ├── IDENTITY.md                 ← Role, expertise, domain knowledge
+│   ├── PRINCIPLES.md               ← Domain laws, The Algorithm, anti-patterns
+│   ├── USER.md                     ← Operator profile and preferences
+│   ├── HEARTBEAT.md                ← Boot checklist and session rituals
+│   └── NOW.md                      ← Active context (update each session)
 │
-├── Profiles/
-│   ├── README.md                    ← How to create/deploy profiles
-│   └── OBQ_Default/                 ← Full machine-portable identity snapshot
-│       ├── CLAUDE.md
-│       └── soul/                    ← All 10 soul files
-│
-├── docs/
-│   └── user-guide.md                ← Full usage guide with live examples
-│
-├── soul/                            ← Persistent identity system
-│   ├── SOUL.md                      ← Core drive and mission
-│   ├── IDENTITY.md                  ← Role, expertise, operating principles
-│   ├── PRINCIPLES.md                ← Domain laws and non-negotiables
-│   ├── USER.md                      ← Operator profile and preferences
-│   ├── HEARTBEAT.md                 ← Boot checklist and session rituals
-│   ├── NOW.md                       ← Active context (update each session)
-│   ├── MOTHER_ENHANCED.md           ← MU/TH/UR 6000 full character profile
-│   ├── JARVIS_ENHANCED.md           ← J.A.R.V.I.S. full character profile
-│   ├── TARS_ENHANCED.md             ← TARS full character profile
-│   └── DISPLAY_PROTOCOL.md          ← LOW/MEDIUM/HIGH visual system
+├── system/                         ← Governance architecture (NEW in v4.0)
+│   ├── containment.md              ← ACL rules — who reads/writes what
+│   ├── principles.md               ← The 5-step Algorithm
+│   └── resource_mapping.md         ← Directory map for the full system
 │
 ├── claude_md/
-│   └── global_CLAUDE.md             ← Deploys to ~/.claude/CLAUDE.md
+│   └── global_CLAUDE.md            ← Deploys to ~/.claude/CLAUDE.md
+│
+├── commands/ (8 total)
+│   ├── session-start.md            ← /session-start
+│   ├── log-results.md              ← /log-results
+│   ├── new-strategy.md             ← /new-strategy
+│   ├── update-knowledge.md         ← /update-knowledge
+│   ├── rsl-status.md               ← /rsl-status
+│   ├── debloat.md                  ← /debloat (NEW — system resource audit)
+│   ├── handoff.md                  ← /handoff (NEW — session continuity)
+│   └── napkin.md                   ← /napkin (NEW — per-project runbook)
 │
 ├── skills/ (17 deployed)
-│   ├── vbt-patterns/                ← VBT bugs + from_order_func template
-│   ├── data-quality/                ← Pre-backtest validation protocol
-│   ├── backtest-review/             ← Post-run quality checklist
-│   ├── paper-to-strategy/           ← Paper PDF → VBT strategy
-│   ├── recursive-self-learning/     ← RSL system documentation
-│   ├── auto-skill/                  ← Workflow crystallization
-│   ├── auto-tool/                   ← Script extraction
+│   ├── vbt-patterns/               ← VBT bugs + from_order_func template
+│   ├── data-quality/               ← Pre-backtest validation protocol
+│   ├── backtest-review/            ← Post-run quality checklist
+│   ├── paper-to-strategy/          ← Paper PDF → VBT strategy
+│   ├── recursive-self-learning/    ← RSL system documentation
+│   ├── auto-skill/                 ← Workflow crystallization
+│   ├── auto-tool/                  ← Script extraction
 │   └── [10 more domain skills]
 │
 ├── agents/
-│   ├── backtest-reviewer.md         ← Post-backtest audit subagent
-│   └── paper-analyst.md             ← Research paper extraction subagent
+│   ├── backtest-reviewer.md        ← Post-backtest audit subagent
+│   └── paper-analyst.md            ← Research paper extraction subagent
 │
-├── commands/
-│   ├── session-start.md             ← /session-start
-│   ├── log-results.md               ← /log-results
-│   ├── new-strategy.md              ← /new-strategy
-│   ├── update-knowledge.md          ← /update-knowledge
-│   └── rsl-status.md                ← /rsl-status
+├── prime_directive/
+│   └── constitution.md             ← OBQ governance — data pipeline laws
 │
-└── hooks/
-    ├── block-sensitive-files.py     ← PreToolUse: blocks .env writes
-    └── syntax-check.sh              ← PostToolUse: Python syntax validation
+├── hooks/
+│   ├── block-sensitive-files.py    ← PreToolUse: blocks .env writes
+│   └── syntax-check.sh            ← PostToolUse: Python syntax validation
+│
+├── OBQ_Profile/                    ← Active machine snapshot
+├── Profiles/                       ← Multi-machine portable profiles
+├── knowledge/                      ← Domain reference docs
+├── mcp/                            ← MCP server configs
+├── docs/                           ← User guide and documentation
+└── Initiate/                       ← Step-by-step first install guide
 ```
+
+---
+
+## COMMANDS REFERENCE
+
+| Command | What It Does |
+|---|---|
+| `/session-start` | Orient to project — load memory, surface last session, review tasks |
+| `/rsl-status` | Show RSL loop state — pending flags, lessons count |
+| `/log-results` | Log backtest results to `knowledge/backtest_results_log.md` |
+| `/new-strategy` | Scaffold a new VBT strategy from the standard OBQ template |
+| `/update-knowledge` | Review and refresh project knowledge files |
+| `/debloat` | System resource audit — processes, .claude bloat, MCP health |
+| `/handoff` | Session handoff summary — git state, accomplishments, next steps |
+| `/napkin` | Per-project runbook — architecture, gotchas, state, conventions |
 
 ---
 
@@ -307,18 +413,6 @@ OBQ_Mother_Claude/
 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | The operating environment. CLAUDE.md, skills, hooks, agents, commands. |
 | [assafelovic/skyll](https://github.com/assafelovic/skyll) | Skill marketplace. Mother searches, you approve, skills get deployed. |
 | [supermemory/supermemory](https://github.com/supermemory/supermemory) | Persistent cross-session memory. `/super-save` → recalled next session. |
-
----
-
-## COMMANDS REFERENCE
-
-| Command | What It Does |
-|---|---|
-| `/session-start` | Orient to project — load memory, surface last session, review tasks |
-| `/rsl-status` | Show RSL loop state — pending flags, lessons count, synthesis schedule |
-| `/log-results` | Log backtest results to `knowledge/backtest_results_log.md` |
-| `/new-strategy` | Scaffold a new VBT strategy from the standard OBQ template |
-| `/update-knowledge` | Review and refresh project knowledge files |
 
 ---
 
@@ -370,4 +464,4 @@ OBQ_Mother_Claude/
 
 ---
 
-*OBQ_Mother_Claude | v2.0 | 2026-03-01 | Weyland-Yutani Corporation — Authorized Personnel Only*
+*OBQ_Mother_Claude | v4.0.0 | 2026-03-18 | Weyland-Yutani Corporation — Authorized Personnel Only*

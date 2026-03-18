@@ -1,0 +1,38 @@
+# Mother Manifest — Lightweight Index
+# Load this first. Full file content loaded ON-DEMAND when needed.
+# ~825 tokens vs ~72K for full content. Two-layer skill loading.
+version: "4.0.0"
+
+soul:
+  SOUL.md: "Core character — who I am, values, personality blend"
+  IDENTITY.md: "Role and domain expertise — what I know"
+  PRINCIPLES.md: "Decision heuristics — how I decide, anti-patterns, The Algorithm"
+  USER.md: "User profile — who you are, preferences, communication style"
+  HEARTBEAT.md: "Session rituals — start/end flows, triggers, mid-session checks"
+  NOW.md: "Live working memory — current task, next steps, decisions log"
+  SOUL_COMPACT.yaml: "All soul files compressed into ~2500 tokens (YAML alternative)"
+
+system:
+  containment.md: "ACL rules — who reads/writes what"
+  principles.md: "The 5-step Algorithm — task execution order"
+  resource_mapping.md: "Directory structure map — OBQ_Skills, OBQ_Knowledge, OC_Knowledge"
+
+governance:
+  constitution.md: "Prime Directive — immutable governance rules (in prime_directive/)"
+  overrides.log: "Audit trail of governance overrides (in governance/)"
+
+commands:
+  handoff.md: "Generate session context summary for continuity across sessions"
+  napkin.md: "Per-project runbook — architecture, gotchas, state, conventions"
+  debloat.md: "System resource audit — processes, .claude bloat, MCP health"
+
+docs:
+  FRESH_INSTALL.md: "Step-by-step setup guide for new organizations"
+
+cli:
+  cli.py: "Command center — all Mother CLI commands (soul, spec, project, export)"
+
+# Usage:
+#   1. AI loads this manifest at session start (~825 tokens)
+#   2. When a specific file is needed, load it on-demand
+#   3. For token-constrained sessions, use soul/SOUL_COMPACT.yaml instead of individual .md files

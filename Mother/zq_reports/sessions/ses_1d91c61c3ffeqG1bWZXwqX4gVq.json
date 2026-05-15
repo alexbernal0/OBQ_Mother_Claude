@@ -1,0 +1,52 @@
+{
+  "score": {
+    "session_id": "ses_1d91c61c3ffeqG1bWZXwqX4gVq",
+    "title": "VS Code freezing with multiple tasks",
+    "zq": 0.619,
+    "accuracy_score": 0.791,
+    "efficiency_score": 0.762,
+    "speed_score": 0.192,
+    "output_score": 0.7,
+    "cache_hit_rate": 0.9067544182742896,
+    "cheap_model_ratio": 0.3840764331210191,
+    "cost": 34.96460415,
+    "duration_min": 1350.1,
+    "grade": "C",
+    "insights": [
+      "Excellent cache efficiency (91%)",
+      "Bash repeat waste (12 duplicates) \u2014 cache results or take notes",
+      "High session cost ($34.96) \u2014 consider downtiering model",
+      "Heavy session (372 messages) \u2014 start /handoff earlier next time"
+    ]
+  },
+  "metrics": {
+    "session_id": "ses_1d91c61c3ffeqG1bWZXwqX4gVq",
+    "title": "VS Code freezing with multiple tasks",
+    "directory": "C:\\Users\\admin\\Desktop\\MotherV4",
+    "agent": "Sisyphus - Ultraworker",
+    "model": "{\"id\":\"claude-sonnet-4-6\",\"providerID\":\"anthropic\",\"variant\":\"default\"}",
+    "is_subagent": false,
+    "started_at": "2026-05-14T10:28:31.932000",
+    "ended_at": "2026-05-15T08:58:40.001000",
+    "duration_seconds": 81008.069,
+    "total_messages": 372,
+    "assistant_messages": 314,
+    "tokens_input": 561,
+    "tokens_output": 90911,
+    "tokens_reasoning": 0,
+    "cache_read": 32727431,
+    "cache_write": 3274035,
+    "total_cost": 34.96460415,
+    "lines_added": 0,
+    "lines_deleted": 0,
+    "files_changed": 0,
+    "tool_calls": 363,
+    "tool_errors": 10,
+    "bash_repeats": 12,
+    "models": {
+      "claude-sonnet-4-6": 201,
+      "claude-opus-4-7": 113
+    }
+  },
+  "generated_at": "2026-05-15T08:58:52.269891"
+}

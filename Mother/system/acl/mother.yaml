@@ -1,0 +1,48 @@
+# Mother ACL — Global Governance Layer
+# This defines what the Mother layer can read and write
+
+name: mother
+description: |
+  Global governance layer. Enforces Prime Directive across all projects.
+  Read access to everything for validation. Write access only to governance.
+
+read:
+  - path: "**/*"
+    description: Full read access for governance validation and oversight
+
+write:
+  - path: "Mother/governance/**"
+    description: Override logs, decision records, audit trail
+  - path: "Mother/system/**"
+    description: System configuration, principles, containment rules
+  - path: "Mother/master_projects/**"
+    description: Archived project knowledge synthesis
+
+forbidden:
+  - path: "Mother/prime_directive/Prime_Directive.pdf"
+    reason: IMMUTABLE — Source of truth, read-only by design
+  - path: "Mother/Prime Directive/Prime_Directive.pdf"
+    reason: IMMUTABLE — Source of truth, read-only by design
+  - path: "**/node_modules/**"
+    reason: External dependencies — outside governance scope
+  - path: "**/.git/**"
+    reason: Git internals — use git commands, not direct file access
+  - path: "**/venv/**"
+    reason: Python virtual environments — external dependencies
+  - path: "**/__pycache__/**"
+    reason: Python cache — auto-generated
+
+# Resource access (for reference, not enforcement)
+resources:
+  ZON_Knowledge:
+    path: "~/Desktop/Zon_Knowledge/"
+    access: read
+    purpose: Company/product knowledge validation
+  OC_Knowledge:
+    path: "~/Desktop/OC_Knowledge/"
+    access: read
+    purpose: Self-improvement knowledge oversight
+  ZON_Skills:
+    path: "~/Desktop/ZON_Skills/"
+    access: read
+    purpose: Available skills and tools catalog

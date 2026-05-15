@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+
+# Secrets
+.env
+*.env
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Large data / indexes
+*.faiss
+*.pkl
+*.code_index.json
+zq_reports/sessions/
+.mother/
+
+# Backups (keep structure, not content)
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+widget_crash.log
+
+# Node
+node_modules/
+
+# Temp
+*.tmp
+*.bak
+*.bak.*
+*.backup
+*.pre-*
